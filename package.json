@@ -1,0 +1,36 @@
+{
+  "name": "inspirational-quotes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "12.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "8.9.0",
+    "eslint-config-next": "12.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marckesin/Inspirational-Quotes.git"
+  },
+  "keywords": [
+    "[next",
+    "api",
+    "quotes]"
+  ],
+  "author": "Ronaldo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marckesin/Inspirational-Quotes/issues"
+  },
+  "homepage": "https://github.com/marckesin/Inspirational-Quotes#readme"
+}
