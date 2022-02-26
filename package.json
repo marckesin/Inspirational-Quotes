@@ -1,7 +1,7 @@
 {
   "name": "inspirational-quotes",
   "version": "1.0.0",
-  "description": "",
+  "description": "Random inspirational quote website created with Next.js and zenquotes.io API.",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
@@ -23,9 +23,9 @@
     "url": "git+https://github.com/marckesin/Inspirational-Quotes.git"
   },
   "keywords": [
-    "[next",
+    "next",
     "api",
-    "quotes]"
+    "zenquotes"
   ],
   "author": "Ronaldo",
   "license": "MIT",
