@@ -1,7 +1,6 @@
 import { Container } from "@material-ui/core";
 import Footer from "../components/footer";
 import Head from "next/head";
-import Paper from "@material-ui/core/Paper";
 import Quote from "../components/quote";
 import styles from "../styles/Home.module.css";
 
