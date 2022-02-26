@@ -2,6 +2,6 @@
 
 # Inspirational Quotes
 
-A single page app to view random famous quotes from [zenquotes.io](https://zenquotes.io) API.
+Next.js application to view random famous quotes from [zenquotes.io](https://zenquotes.io) API.
 
 ![](./screenshot.png)

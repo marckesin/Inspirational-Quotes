@@ -1,11 +1,14 @@
+import { Container } from "@material-ui/core";
+import Footer from "../components/footer";
 import Head from "next/head";
-import Image from "next/image";
+import Paper from "@material-ui/core/Paper";
+import Quote from "../components/quote";
 import styles from "../styles/Home.module.css";
 
 // Home component to render the landing page
 export default function Home({ quote }) {
   return (
-    <div className={styles.container}>
+    <Container maxWidth="md">
       <Head>
         <title>Inspirational Quotes</title>
         <meta
@@ -16,33 +19,11 @@ export default function Home({ quote }) {
       </Head>
 
       <main className={styles.main}>
-        {quote && (
-          <figure className={styles.text_align}>
-            <blockquote className="blockquote">
-              <p className="display-4">{quote.q}</p>
-            </blockquote>
-            <figcaption className="blockquote-footer">
-              <cite className="fs-5" title="Source Title">
-                {quote.a}
-              </cite>
-            </figcaption>
-          </figure>
-        )}
+        <Quote quote={quote} />
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
+      <Footer />
+    </Container>
   );
 }
 
