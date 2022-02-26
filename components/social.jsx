@@ -1,7 +1,7 @@
-import GitHubIcon from "@material-ui/icons/GitHub";
-import Link from "@material-ui/core/Link";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import RedditIcon from "@material-ui/icons/Reddit";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import Link from "@mui/material/Link";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import RedditIcon from "@mui/icons-material/Reddit";
 import styles from "../styles/Home.module.css";
 
 // Social icons component

@@ -1,4 +1,4 @@
-import { Container } from "@material-ui/core";
+import Container from "@mui/material/Container";
 import Footer from "../components/footer";
 import Head from "next/head";
 import Quote from "../components/quote";
