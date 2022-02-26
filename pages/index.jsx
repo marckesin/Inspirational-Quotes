@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
+// Home component to render the landing page
 export default function Home({ quote }) {
   return (
     <div className={styles.container}>
@@ -45,10 +46,11 @@ export default function Home({ quote }) {
   );
 }
 
+// Home component will fetch data using this function on every request
 export async function getServerSideProps() {
   const res = await fetch(`https://zenquotes.io/api/random`);
   const data = await res.json();
-  const quote = data[0];
+  const [quote] = data;
 
   return { props: { quote } };
 }

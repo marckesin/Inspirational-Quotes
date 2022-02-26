@@ -1,5 +1,6 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import { Head, Html, Main, NextScript } from "next/document";
 
+// Custom Document component to update the <html> and <body> tags used to render a Page.
 export default function Document() {
   return (
     <Html lang="en">
