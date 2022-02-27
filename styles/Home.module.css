@@ -1,3 +1,11 @@
+.footer {
+  display: flex;
+  padding: 1rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
 .main {
   height: 100vh;
   padding: 4rem 0;
@@ -8,33 +16,29 @@
   align-items: center;
 }
 
-.footer {
-  display: flex;
-  padding: 1rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
 .social {
   margin: 0 0.5rem !important;
 }
 
 .text_align {
   text-align: right;
-  padding-right: 2rem;
+  padding: 2rem;
   border-right: 5px solid #ff758f;
   color: #14213d;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.45) 25px 0 20px -20px;
 }
 
 @media (max-width: 600px) {
   .container {
-    padding: 0 1.75rem;
+    padding: 0 1rem;
   }
 
   .text_align {
-    padding-right: 0;
+    padding: 1rem;
     border-right: 0;
     text-align: center !important;
+    border-left: 5px solid#ff758f;
+    border-right: 5px solid#ff758f;
   }
 }
