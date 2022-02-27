@@ -7,7 +7,7 @@ import styles from "../styles/Home.module.css";
 // Home component to render the landing page
 export default function Home({ quote }) {
   return (
-    <Container maxWidth="md">
+    <Container className={styles.container} maxWidth="md">
       <Head>
         <title>Inspirational Quotes</title>
         <meta
