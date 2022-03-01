@@ -1,8 +1,8 @@
-import { IconButton } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkIcon from "./linkIcon";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import RedditIcon from "@mui/icons-material/Reddit";
+import { IconButton } from "@mui/material";
+import LinkIcon from "./linkIcon";
 
 // Social icons component
 export default function Social() {

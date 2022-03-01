@@ -1,6 +1,6 @@
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { IconButton } from "@mui/material";
 import RefreshIcon from "@mui/icons-material/Refresh";
+import { IconButton } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme({
   palette: {
@@ -13,6 +13,7 @@ const theme = createTheme({
   },
 });
 
+// Refresh button component to fetch new data
 export default function RefreshButton({ handleClick }) {
   return (
     <ThemeProvider theme={theme}>
