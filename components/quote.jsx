@@ -1,8 +1,8 @@
 import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from "next/router";
-import styles from "../styles/Home.module.css";
 import RefreshButton from "./refreshButton";
+import styles from "../styles/Home.module.css";
 
 // Quote component that shows the message
 export default function Quote({ quote }) {
