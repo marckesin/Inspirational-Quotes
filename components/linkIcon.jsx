@@ -9,7 +9,6 @@ export default function LinkIcon({ href, children }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      color="textSecondary"
     >
       {children}
     </Link>
