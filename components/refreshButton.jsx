@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-=======
-import { createTheme, ThemeProvider } from "@mui/material/styles";
->>>>>>> 96c056785b897deefdca1bc8936b0ffc80ccbc4b
 import { IconButton } from "@mui/material";
 import RefreshIcon from "@mui/icons-material/Refresh";
 
