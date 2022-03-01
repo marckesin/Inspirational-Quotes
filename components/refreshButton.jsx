@@ -1,6 +1,6 @@
-import RefreshIcon from "@mui/icons-material/Refresh";
-import { IconButton } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { IconButton } from "@mui/material";
+import RefreshIcon from "@mui/icons-material/Refresh";
 
 const theme = createTheme({
   palette: {
