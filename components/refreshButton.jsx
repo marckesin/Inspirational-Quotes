@@ -13,6 +13,7 @@ const theme = createTheme({
   },
 });
 
+// Refresh button component to fetch new data
 export default function RefreshButton({ handleClick }) {
   return (
     <ThemeProvider theme={theme}>
