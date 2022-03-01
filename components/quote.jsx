@@ -1,9 +1,19 @@
 import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useRouter } from "next/router";
+import RefreshButton from "./refreshButton";
 import styles from "../styles/Home.module.css";
 
-// Quote component
+// Quote component that shows the message
 export default function Quote({ quote }) {
+  const router = useRouter();
+
+  // Function to refresh the content of the quote
+  const handleClick = e => {
+    e.preventDefault();
+    router.push(window.location.pathname);
+  };
+
   return (
     <>
       {quote && (
@@ -26,6 +36,7 @@ export default function Quote({ quote }) {
               {quote.a}
             </cite>
           </figcaption>
+          <RefreshButton handleClick={handleClick} />
         </figure>
       )}
     </>

@@ -35,9 +35,11 @@
   }
 
   .text_align {
-    padding: 1rem;
+    padding: 2rem 1rem;
     text-align: center !important;
     border-left: 5px solid#ff758f;
     border-right: 5px solid#ff758f;
+    box-shadow: rgba(0, 0, 0, 0.45) 25px 0 20px -20px,
+      rgba(0, 0, 0, 0.45) -25px 0 20px -20px;
   }
 }
