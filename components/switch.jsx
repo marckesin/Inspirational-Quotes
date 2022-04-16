@@ -1,7 +1,8 @@
+import { styled } from "@mui/material/styles";
 import Switch from "@mui/material/Switch";
 import styles from "../styles/Home.module.css";
-import { styled } from "@mui/material/styles";
 
+// Switch component
 export default function StyledSwitch() {
   const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     width: 62,
