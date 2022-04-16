@@ -39,4 +39,5 @@ yarn-error.log*
 
 # prettier
 .prettierrc
-.vercel
+
+*.map

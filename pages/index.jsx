@@ -2,6 +2,7 @@ import Container from "@mui/material/Container";
 import Footer from "../components/footer";
 import Head from "next/head";
 import Quote from "../components/quote";
+import Switch from "../components/switch";
 import styles from "../styles/Home.module.css";
 
 // Home component to render the landing page
@@ -18,6 +19,7 @@ export default function Home({ quote }) {
       </Head>
 
       <main className={styles.main}>
+        <Switch />
         <Quote quote={quote} />
       </main>
 

@@ -29,6 +29,10 @@
   box-shadow: rgba(0, 0, 0, 0.45) 25px 0 20px -20px;
 }
 
+// .switch {
+//   align-self: flex-end;
+// }
+
 @media (max-width: 600px) {
   .container {
     padding: 0 1rem;
@@ -39,8 +43,7 @@
     text-align: center !important;
     border-left: 5px solid #ff758f;
     border-right: 5px solid #ff758f;
-    box-shadow: rgba(0, 0, 0, 0.45) 25px 0 20px -20px, rgba(0, 0, 0, 0.45) -25px 0 20px -20px;
+    box-shadow: rgba(0, 0, 0, 0.45) 25px 0 20px -20px,
+      rgba(0, 0, 0, 0.45) -25px 0 20px -20px;
   }
 }
-
-/*# sourceMappingURL=Home.module.css.map */
