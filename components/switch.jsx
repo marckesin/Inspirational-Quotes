@@ -1,5 +1,5 @@
-import { styled } from "@mui/material/styles";
 import Switch from "@mui/material/Switch";
+import { styled } from "@mui/material/styles";
 import styles from "../styles/Home.module.css";
 
 // Switch component
