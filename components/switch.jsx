@@ -1,10 +1,12 @@
-import { styled } from "@mui/material/styles";
-import { useContext } from "react";
 import Context from "../context";
 import Switch from "@mui/material/Switch";
+import { styled } from "@mui/material/styles";
+import { useContext } from "react";
 
 // Switch component
 export default function StyledSwitch() {
+  const [state, setState] = useContext(Context);
+
   const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     width: 62,
     height: 34,
@@ -59,8 +61,6 @@ export default function StyledSwitch() {
       borderRadius: 20 / 2,
     },
   }));
-
-  const [state, setState] = useContext(Context);
 
   return <MaterialUISwitch onClick={() => setState(!state)} checked={state} />;
 }
