@@ -1,13 +1,17 @@
+import Context from "../context";
+import RefreshIcon from "@mui/icons-material/Refresh";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { IconButton } from "@mui/material";
-import RefreshIcon from "@mui/icons-material/Refresh";
+import { useContext } from "react";
 
 const theme = createTheme({
   palette: {
     pink: {
-      light: "#ff7961",
       main: "#ff758f",
-      dark: "#ba000d",
+      contrastText: "#000",
+    },
+    light: {
+      main: "#f9fafb",
       contrastText: "#000",
     },
   },
@@ -15,6 +19,8 @@ const theme = createTheme({
 
 // Refresh button component to fetch new data
 export default function RefreshButton({ handleClick }) {
+  const [state, setState] = useContext(Context);
+
   return (
     <ThemeProvider theme={theme}>
       <IconButton
@@ -23,7 +29,13 @@ export default function RefreshButton({ handleClick }) {
         className="shadow-sm"
         aria-label="Refresh"
       >
-        <RefreshIcon color="pink" fontSize="large" />
+        <Context.Provider value={[state, setState]}>
+          {state ? (
+            <RefreshIcon color="light" fontSize="large" />
+          ) : (
+            <RefreshIcon color="pink" fontSize="large" />
+          )}
+        </Context.Provider>
       </IconButton>
     </ThemeProvider>
   );

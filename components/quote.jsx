@@ -17,7 +17,7 @@ export default function Quote({ quote }) {
   return (
     <>
       {quote && (
-        <figure className={styles.text_align}>
+        <figure className={styles.text}>
           <blockquote className="blockquote">
             <p className="display-5 fw-bold">
               <FontAwesomeIcon
