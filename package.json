@@ -34,7 +34,8 @@
     "next",
     "api",
     "zenquotes",
-    "mui"
+    "mui",
+    "react"
   ],
   "author": "Ronaldo",
   "license": "MIT",
